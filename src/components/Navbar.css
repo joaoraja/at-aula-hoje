@@ -1,0 +1,211 @@
+/* Estilos da Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #9e313c;
+  color: white;
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.menu-hamburguer {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-hamburguer.aberto .linha {
+  background-color: #f09d42;
+}
+
+.linha {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: background-color 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
+
+.nav-links li:last-child {
+  border-right: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f09d42;
+  border-bottom: 2px solid #f09d42;
+}
+
+.nav-links.ativo {
+  display: flex;
+}
+
+/* Estilos do Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #9e313c;
+  padding: 10px;
+  list-style: none;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  margin: 15px 0;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu.visivel {
+  display: block;
+}
+
+/* Estilos da seta para dropdown */
+.dropdown-link {
+  position: relative;
+  padding-right: 15px; 
+}
+
+.dropdown-link .seta {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+/* Rotacionar a seta para cima quando o dropdown estiver aberto */
+.dropdown-menu.visivel .seta {
+  transform: rotate(180deg);
+}
+
+/* Para dispositivos móveis menores */
+@media (max-width: 768px) {
+  .menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #9e313c;
+    position: absolute;
+    top: 120px; 
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.ativo {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-right: none; 
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-hamburguer.aberto .linha:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-hamburguer.aberto .linha:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-hamburguer.aberto .linha:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* Para Apple Watch*/
+@media (max-width: 320px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    width: 60px; 
+  }
+
+  .nav-links {
+    font-size: 12px; 
+    gap: 10px; 
+  }
+
+  .dropdown-link .seta {
+    border-top: 3px solid white;
+  }
+
+  .menu-hamburguer {
+    width: 20px;
+    height: 15px;
+  }
+
+  .linha {
+    width: 20px;
+  }
+}
+
+/* Para telas maiores, como MacBook */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .nav-links {
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+}

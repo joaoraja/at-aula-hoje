@@ -1,0 +1,158 @@
+.acesso-informacao {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  width: 48%;
+}
+
+.coluna-esquerda p,
+.coluna-direita p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.imagens-historicas {
+  text-align: center;
+}
+
+.galeria-imagens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imagem {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imagem p {
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+/* Para Apple Watch*/
+@media (max-width: 320px) {
+  .acesso-informacao {
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 100%;
+  }
+
+  .galeria-imagens {
+    flex-direction: column;
+  }
+
+  .imagem {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .imagem p {
+    text-align: center;
+  }
+}
+
+/* Para dispositivos menores */
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 100%;
+  }
+
+  .imagem {
+    width: 45%;
+  }
+
+  .galeria-imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem {
+    margin-bottom: 20px;
+  }
+}
+
+/* Para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 48%;
+  }
+
+  .imagem {
+    width: 30%;
+  }
+}
+
+/* Para telas maiores(MacBook) */
+@media (min-width: 1025px) {
+  .conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 48%;
+  }
+
+  .galeria-imagens {
+    flex-direction: row;
+  }
+
+  .imagem {
+    width: 20%;
+  }
+
+  .imagem p {
+    font-size: 0.9em;
+  }
+}

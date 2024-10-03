@@ -1,0 +1,181 @@
+/* Estilos para o botão de alternância de modo */
+.alternar-modo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.botao-alternar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-alternar:hover {
+  background-color: #555;
+}
+
+/* Estilos globais do modo escuro */
+body.modo-escuro {
+  background-color: #333;
+  color: white;
+}
+
+body.modo-escuro a {
+  color: #f09d42;
+}
+
+body.modo-escuro .navbar {
+  background-color: #222;
+}
+
+body.modo-escuro .nav-links a {
+  color: white;
+}
+
+body.modo-escuro .nav-links a:hover {
+  color: #f09d42;
+}
+
+body.modo-escuro .dropdown-menu {
+  background-color: #444;
+}
+
+body.modo-escuro h2 {
+  color: white;
+}
+
+body.modo-escuro p {
+  color: white;
+}
+
+body.modo-escuro .dropdown-menu a {
+  color: white;
+}
+
+body.modo-escuro .dropdown-menu a:hover {
+  color: #f09d42;
+  background-color: #666;
+}
+
+/* Estilos do menu hambúrguer no modo escuro */
+body.modo-escuro .menu-hamburguer {
+  background-color: #555;
+}
+
+body.modo-escuro .menu-hamburguer .linha {
+  background-color: white;
+}
+
+body.modo-escuro .nav-links.ativo {
+  background-color: #555;
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(2) {
+  opacity: 0;
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Estilos do modo escuro para as seções de acervo */
+body.modo-escuro .acervo-item {
+  background-color: #222; /* Fundo escuro para os acervos */
+  color: white; /* Texto branco nos acervos */
+}
+
+body.modo-escuro .acervo-texto h2 {
+  color: white; /* Título dos acervos em branco */
+}
+
+body.modo-escuro .acervo-texto p {
+  color: white; /* Texto do acervo em branco */
+}
+
+body.modo-escuro .acervo-imagem img {
+  opacity: 0.8; /* Suaviza a imagem no modo escuro */
+}
+
+body.modo-escuro .btn-acervo {
+  background-color: #444; /* Cor de fundo do botão no modo escuro */
+  color: white;
+}
+
+body.modo-escuro .btn-acervo:hover {
+  background-color: #666; /* Cor do botão ao passar o mouse */
+}
+
+body.modo-escuro .acesso-informacao {
+  background-color: #222; /* Cor de fundo preto no Dark Mode */
+}
+
+body.modo-escuro .acesso-informacao h1 {
+  color: white; /* Cor dos títulos (h1) no Dark Mode */
+}
+
+body.modo-escuro .acesso-informacao h2 {
+  color: white; /* Cor dos títulos (h2) no Dark Mode */
+}
+
+body.modo-escuro .acesso-informacao p {
+  color: white; /* Cor do texto (p) no Dark Mode */
+}
+
+body.modo-escuro .acesso-informacao .imagem p {
+  color: white; /* Cor do texto embaixo das imagens no Dark Mode */
+}
+
+/* Estilos para o modo escuro */
+body.modo-escuro .carrossel-publicacoes {
+  background-color: #222; /* Fundo preto */
+  color: white; /* Letras brancas */
+}
+
+body.modo-escuro .cartao-publicacao img {
+  border: 2px solid #555; /* Bordas claras para as imagens no modo escuro, opcional */
+}
+
+body.modo-escuro .conteudo-publicacao h3 {
+  color: white; /* Título em branco */
+}
+
+body.modo-escuro .conteudo-publicacao p {
+  color: #ccc; /* Texto em cinza claro para boa legibilidade */
+}
+
+/* Estilos para as bolinhas do carrossel no modo escuro */
+body.modo-escuro .carousel .control-dots .dot {
+  background-color: #fff; /* Bolinhas de navegação brancas */
+}
+
+body.modo-escuro .carousel .control-dots .dot.selected {
+  background-color: #f09d42; /* Cor diferente para o ponto selecionado */
+}
+
+body.modo-escuro .footer {
+  background-color: #222; /* Fundo preto no modo escuro */
+  color: white; /* Texto branco no modo escuro */
+}
+
+body.modo-escuro .footer-section ul li a {
+  color: white; /* Links em branco no modo escuro */
+}
+
+body.modo-escuro .footer-section ul li a:hover {
+  color: #f09d42; /* Cor do link no hover no modo escuro */
+}
+
+body.modo-escuro .footer-section ul li svg {
+  color: white; /* Ícones em branco no modo escuro */
+}

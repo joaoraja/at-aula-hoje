@@ -1,0 +1,175 @@
+.alternar-modo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.botao-alternar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-alternar:hover {
+  background-color: #555;
+}
+
+body.modo-escuro {
+  background-color: #333;
+  color: white;
+}
+
+body.modo-escuro a {
+  color: #f09d42;
+}
+
+body.modo-escuro .navbar {
+  background-color: #222;
+}
+
+body.modo-escuro .nav-links a {
+  color: white;
+}
+
+body.modo-escuro .nav-links a:hover {
+  color: #f09d42;
+}
+
+body.modo-escuro .dropdown-menu {
+  background-color: #444;
+}
+
+body.modo-escuro h2 {
+  color: white;
+}
+
+body.modo-escuro p {
+  color: white;
+}
+
+body.modo-escuro .dropdown-menu a {
+  color: white;
+}
+
+body.modo-escuro .dropdown-menu a:hover {
+  color: #f09d42;
+  background-color: #666;
+}
+
+body.modo-escuro .menu-hamburguer {
+  background-color: #555;
+}
+
+body.modo-escuro .menu-hamburguer .linha {
+  background-color: white;
+}
+
+body.modo-escuro .nav-links.ativo {
+  background-color: #555;
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(2) {
+  opacity: 0;
+}
+
+body.modo-escuro .menu-hamburguer.aberto .linha:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+body.modo-escuro .acervo-item {
+  background-color: #222;
+  color: white;
+}
+
+body.modo-escuro .acervo-texto h2 {
+  color: white;
+}
+
+body.modo-escuro .acervo-texto p {
+  color: white;
+}
+
+body.modo-escuro .acervo-imagem img {
+  opacity: 0.8;
+}
+
+body.modo-escuro .btn-acervo {
+  background-color: #444;
+  color: white;
+}
+
+body.modo-escuro .btn-acervo:hover {
+  background-color: #666;
+}
+
+body.modo-escuro .acesso-informacao {
+  background-color: #222;
+}
+
+body.modo-escuro .acesso-informacao h1 {
+  color: white;
+}
+
+body.modo-escuro .acesso-informacao h2 {
+  color: white;
+}
+
+body.modo-escuro .acesso-informacao p {
+  color: white;
+}
+
+body.modo-escuro .acesso-informacao .imagem p {
+  color: white;
+}
+
+body.modo-escuro .carrossel-publicacoes {
+  background-color: #222;
+  color: white;
+}
+
+body.modo-escuro .cartao-publicacao img {
+  border: 2px solid #555;
+}
+
+body.modo-escuro .conteudo-publicacao h3 {
+  color: white;
+}
+
+body.modo-escuro .conteudo-publicacao p {
+  color: #ccc;
+}
+
+body.modo-escuro .carousel .control-dots .dot {
+  background-color: #fff;
+}
+
+body.modo-escuro .carousel .control-dots .dot.selected {
+  background-color: #f09d42;
+}
+
+body.modo-escuro .footer {
+  background-color: #222;
+  color: white;
+}
+
+body.modo-escuro .footer-section ul li a {
+  color: white;
+}
+
+body.modo-escuro .footer-section ul li a:hover {
+  color: #f09d42;
+}
+
+body.modo-escuro .footer-section ul li svg {
+  color: white;
+}

@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.acervo {
+  width: 100%;
+  padding: 20px;
+}
+
+/*Banner c/imagem de fundo*/
+.acervo-banner {
+  background-image: url("https://mhn.acervos.museus.gov.br/wp-content/uploads/2024/03/024-scaled-1-1536x778-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acervo-banner-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.acervo-banner h1 {
+  font-size: 2.5em;
+  color: #a02a2a;
+  margin: 0;
+}
+
+/*Descrição inicial*/
+.acervo-descricao {
+  text-align: center;
+  font-size: 1.2em;
+  color: #a02a2a;
+  margin: 40px 0;
+}
+
+.subacervo {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*Itens do acervo*/
+.acervo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.acervo-item h2 {
+  font-size: 1.8em;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.acervo-texto {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.acervo-item p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.acervo-imagem {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.acervo-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.btn-acervo {
+  background-color: #a02a2a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.btn-acervo:hover {
+  background-color: #731d1d;
+}
+
+/* Responsividade para dispositivos (tablets) */
+@media (min-width: 600px) {
+  .acervo-item {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .acervo-texto {
+    width: 60%;
+  }
+
+  .acervo-imagem {
+    width: 35%;
+  }
+}
+
+/*Responsividade para dispositivos (desktop)*/
+@media (min-width: 1024px) {
+  .acervo-banner {
+    height: 400px;
+  }
+
+  .acervo-banner h1 {
+    font-size: 3em;
+  }
+
+  .acervo-item h2 {
+    font-size: 2em;
+  }
+
+  .acervo-item p {
+    font-size: 1.1em;
+  }
+
+  .btn-acervo {
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+}
+
+/*Responsividade para dispositivos (smartphones e Apple Watch) */
+@media (max-width: 480px) {
+  .acervo-banner {
+    height: 200px;
+  }
+
+  .acervo-banner h1 {
+    font-size: 1.8em;
+  }
+
+  .acervo-item h2 {
+    font-size: 1.4em;
+  }
+
+  .acervo-item p {
+    font-size: 0.9em;
+  }
+
+  .btn-acervo {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 300px) {
+  .acervo-banner h1 {
+    font-size: 1.4em;
+  }
+
+  .acervo-item h2 {
+    font-size: 1.2em;
+  }
+
+  .btn-acervo {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}

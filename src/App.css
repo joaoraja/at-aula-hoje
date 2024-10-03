@@ -1,0 +1,29 @@
+/* body { 
+  transform: scale(0.9);  
+  transform-origin: top left;
+} */
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: black;
+}
+
+main {
+  margin-top: 20px;
+  padding: 40px;
+}
+
+section {
+  padding: 40px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2em;
+  color: #666;
+}

@@ -1,0 +1,24 @@
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+}
+
+.video-item {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .video-item {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-item {
+    flex: 1 1 calc(33.33% - 16px);
+  }
+}
